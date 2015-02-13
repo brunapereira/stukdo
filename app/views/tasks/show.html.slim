@@ -1,0 +1,10 @@
+p#notice = notice
+
+p Content: 
+= @task.content 
+
+p State: 
+= @task.state 
+
+= link_to 'Edit', edit_task_path(@task)
+= link_to 'Back', tasks_path 
